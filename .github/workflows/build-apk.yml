@@ -27,7 +27,10 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Validate Expo dependencies\n        run: npx expo install --check\n\n      - name: Generate Android project
+      - name: Validate Expo dependencies
+        run: npx expo install --check
+
+      - name: Generate Android project
         run: npx expo prebuild --platform android --no-install
 
       - name: Build debug APK
