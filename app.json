@@ -8,9 +8,6 @@
     "android": {
       "package": "com.sangbed.videoeditor"
     },
-    "plugins": [
-      "expo-build-properties"
-    ],
     "newArchEnabled": true
   }
 }
