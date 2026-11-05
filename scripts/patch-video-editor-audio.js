@@ -27,7 +27,7 @@ function walk(directory) {
 
     const original = fs.readFileSync(fullPath, 'utf8');
     const updated = original.replace(
-      /(['"])react-native-audio-recorder-player\\1/g,
+      /(['"])react-native-audio-recorder-player\1/g,
       (match, quote) => {
         replacements += 1;
         return quote + 'react-native-nitro-sound' + quote;
