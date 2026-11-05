@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Video Editor",
+    "slug": "video-editor-android",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.sangbed.videoeditor"
+    },
+    "plugins": [
+      "expo-build-properties"
+    ],
+    "newArchEnabled": true
+  }
+}
