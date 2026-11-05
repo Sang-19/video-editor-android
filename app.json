@@ -6,7 +6,10 @@
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
     "android": {
-      "package": "com.sangbed.videoeditor"
+      "package": "com.sangbed.videoeditor",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "newArchEnabled": true
   }
