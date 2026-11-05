@@ -4,6 +4,7 @@ import {
   Alert, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity, View,
 } from 'react-native';
 import {StatusBar as ExpoStatusBar} from 'expo-status-bar';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {pick, types} from '@react-native-documents/picker';
 import {openVideoEditor, VideoEditorHost} from '@zlucksolutions/react-native-video-editor';
 
@@ -44,6 +45,7 @@ export default function App() {
   };
 
   return (
+    <GestureHandlerRootView style={styles.root}>
     <SafeAreaView style={styles.root}>
       <StatusBar barStyle="light-content" backgroundColor="#090909" />
       <ExpoStatusBar style="light" />
@@ -58,6 +60,7 @@ export default function App() {
       </View>
       <VideoEditorHost />
     </SafeAreaView>
+    </GestureHandlerRootView>
   );
 }
 
